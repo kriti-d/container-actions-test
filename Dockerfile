@@ -1,1 +1,1 @@
-FROM python:3.7.0a2
+FROM node:13.14.0-buster-slim
