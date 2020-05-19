@@ -11,14 +11,14 @@ jobs:
     steps:
     - uses: actions/checkout@v2
     - name: Build the Docker image
-      run: docker build . --file Dockerfile --tag myImageName
+      run: docker build . --file Dockerfile --tag my-image
     
     - name: Run Snyk to check Docker image for vulnerabilities
       uses: snyk/actions/docker@master
       env:
         SNYK_TOKEN: ${{ secrets.SNYK_TOKEN }}
       with:
-        image: myImageName
+        image: my-image
         args: --file=Dockerfile
  
       
