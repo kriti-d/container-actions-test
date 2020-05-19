@@ -22,7 +22,7 @@ jobs:
       with:
         image: my-image
         command: monitor
-        args:  --file=Dockerfile, --severity-threshold=high, ${{ secrets.ORG }}
+        args:  --file=Dockerfile,  org= ${{ secrets.ORG }}
 
  
       
