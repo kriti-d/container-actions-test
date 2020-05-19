@@ -19,6 +19,7 @@ jobs:
         SNYK_TOKEN: ${{ secrets.SNYK_TOKEN }}
       with:
         image: my-image
+        command: monitor
         args:  --file=Dockerfile, --severity-threshold=high, --org=demo-org-da9
 
  
