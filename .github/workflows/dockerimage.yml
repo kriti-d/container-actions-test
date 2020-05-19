@@ -21,7 +21,7 @@ jobs:
         SNYK_TOKEN: ${{ secrets.SNYK_TOKEN }}
       with:
         image: my-image
-        args:  --file=Dockerfile --severity-threshold=high
+        args:  --file=Dockerfile
 
  
       
